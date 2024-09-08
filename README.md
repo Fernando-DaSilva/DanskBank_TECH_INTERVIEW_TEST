@@ -2,7 +2,10 @@
 ## Fernando Da Silva - September 2024  
 
 ### VIDEO PRESENTATION:  
-DanskBank_FernandoDaSilva_TechTest.mp4
+DanskBank_FernandoDaSilva_TechTest.mp4 :
+Link YOUTUBE VIDEO : [https://youtu.be/NUNFnRuj4XM]
+Link GOOGLE DRIVE : [https://drive.google.com/file/d/1KRBTpiFqoQKRGkawkzRajcaVA5QlekPL/view?usp=sharing] 
+
 ---
 ### Overview
 In this test, I aimed to showcase my skills using Visual Studio Developer 2022, SQL Server Integration Services (SSIS), and Stored Procedure creation.
@@ -51,6 +54,8 @@ All relevant files are available in the folder `\LearningETL`, including:
 ---
 
 ### Closing Remarks
+
+## Alternative Source of files to install at Google Drive : [https://drive.google.com/drive/folders/1w5nswACDjPOLZXRCGo2fo0HnzmYv5OXt?usp=sharing]
 
 This project is intended to demonstrate my knowledge and effort in adding value through my technical skills. I am eager to be a part of the team and contribute to its success on a daily basis.
 
