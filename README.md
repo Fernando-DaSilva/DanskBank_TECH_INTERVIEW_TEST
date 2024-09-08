@@ -24,11 +24,13 @@ Based on the task requirements, I created a scenario that demonstrates the follo
 ---
 
 ### Installation Instructions
-To run or test the package, you'll need **MS SQL Server**.
+To run or test the package, you'll need **MS SQL Server and Visual Studio 2022 with SSIS Extensions**.
 
 The following files are located in the folder `\LearningETL\SQL_FILES`:  
 - `AdventureWorks_ETL_Source.BAK`: A database backup containing all necessary procedures and tables. Simply restore the database using this file with the given name.  
   **Note**: If you restore it under a different name, ensure you update the package’s connection strings accordingly.
+- Link to download a zip (compressed file) of the database: [https://drive.google.com/file/d/1mP5Fp782uP7EZeqLwj3utxtB5h6FXwY4/view?usp=sharing]
+
 
 If you prefer not to restore the database, the necessary SQL scripts are also provided with the following naming convention:  
 - `SCRIPT_TABLE_[table_name].sql`: Script for creating the tables.
