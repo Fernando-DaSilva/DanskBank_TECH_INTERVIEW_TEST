@@ -1,59 +1,59 @@
-## DanskBank
-## TECH INTERVIEW TEST 
-## Fernando Da Silva - September, 2024
+# DanskBank_TECH_INTERVIEW_TEST
+## Fernando Da Silva - September 2024  
 
-VIDEO PRESENTATION: DanskBank_FernandoDaSilva_TechTest.mp4
+### VIDEO PRESENTATION:  
+DanskBank_FernandoDaSilva_TechTest.mp4
+---
+### Overview
+In this test, I aimed to showcase my skills using Visual Studio Developer 2022, SQL Server Integration Services (SSIS), and Stored Procedure creation.
+Based on the task requirements, I created a scenario that demonstrates the following process using three new tables modeled after the "Person.Address" structure:
 
-My main idea was to use the test to show my skills using the Visual Studio Developer 2022 with the SQL Server Integration Services, and also the creation of Stored Procedures.
+#### Process Breakdown:
+**Step 1**: Read data from the original `Person.Address` table.  
 
-Based on the request, I imagine a scenario where we create 3 new Tables based on " Person.Address structures " and with that demostrate the following process:
+**Step 2**: Split the data into two groups and save them in the following tables:
+  - `Person.Address_ETLInsert`: Contains records to be inserted.
+  - `Person.Address_ETLUpdate`: Contains records to be updated.  
 
-Step 1: Read information from the Original table Person.Address.
+**Step 3**: Store the processed data in the `Person.Address_ETLOutput` table.  
 
-Step 2: Split the information in 2 blocks saving it in the tables: 
-  - Person.Address_ETLInsert , with the content of records to be inserted.
-  - Person.Address_ETLUpdate , with the content of records to be updated.
+**Step 4**: Transform the `AddressLine1` field to uppercase, then export this data to a flat file for integration with external systems, such as those that manage available addresses.  
 
-Step 3: Save the information in the Person.Address_ETLOutput
+**Step 5**: Export logs indicating success or failure. These logs are captured during each step of the ETL package execution.
 
-Step 4: Read and transform the Addresses Line1 to UPPER CASES and save it into a Flat File that can be delivered to new systems, for instance one that control the possible available addresses.
+---
 
-Step 5: Export the Logs of succces or failure.  Those logs are saved during the running steps of the Package.
+### Installation Instructions
+To run or test the package, you'll need **MS SQL Server**.
 
-=========== TO INSTALL ==============
-MS SQL SERVER DATABASE to run/test:
+The following files are located in the folder `\LearningETL\SQL_FILES`:  
+- `AdventureWorks_ETL_Source.BAK`: A database backup containing all necessary procedures and tables. Simply restore the database using this file with the given name.  
+  **Note**: If you restore it under a different name, ensure you update the package’s connection strings accordingly.
 
-Files available in the folder \LearningETL\SQL_FILES 
-AdventureWorks_ETL_Source.BAK is a backup with all the procedures, and tables available to the tests, so you just need to restore it with this name. 
-** If you restore with another name, verify and update the connection strings of the package.
+If you prefer not to restore the database, the necessary SQL scripts are also provided with the following naming convention:  
+- `SCRIPT_TABLE_[table_name].sql`: Script for creating the tables.
+- `SCRIPT_PROCEDURE_[procedure_name].sql`: Script for creating the stored procedures.
 
-If you don't whant to restore the database, the necessary scripts are also available with the following syntax:
-SCRIPT_TABLE_[name of the table].sql
-SCRIPT_PROCEDURE_[name of the procedure].sql
+These scripts enable you to run the package without modifying the actual AdventureWorks database data. This simulates an isolated environment, representing a scenario where actions are performed directly on a **production environment**.
 
-Those are necessary to run the package as it was developed without touch the AdventureWorks database data. 
+---
 
-I did that to emulate an isolated environmnent in a situation where actions are executed directly at the "PRODUCTION ENVIRONMENT"  available.
+### Package Files and Output
 
-PACKAGE FILES and output FLAT FILES:
-Files available at the folder \LearningETL
+All relevant files are available in the folder `\LearningETL`, including:  
+- SSIS package files.  
+- Connection configuration files (`.dsn` / `.udl`).  
+- Text (.txt) flat files generated during the export process.  
+- A video presentation (`.mp4`) explaining the project.
 
-All the files are available, included Configurators of connections (.dns / .udl ) and the Text (.txt) Flat files resulted of the exportation process.
+---
 
-Also a video presentation (.mp4) is available.
+### Closing Remarks
 
-I hope that represents a little of my knowledge, and the effort to add value and show my skills.
-My goal is to be part of the team and add value on a daily basis.
+This project is intended to demonstrate my knowledge and effort in adding value through my technical skills. I am eager to be a part of the team and contribute to its success on a daily basis.
 
-If you have any questions please contact:
-+370 639 00500
-fernando.lietuva@gmail.com
+If you have any questions, feel free to contact me:  
+- Phone: +370 639 00500  
+- Email: fernando.lietuva@gmail.com  
 
 Success!
-
-
-
-
-
-
-
