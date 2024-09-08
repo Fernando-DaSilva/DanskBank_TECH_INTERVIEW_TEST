@@ -1,0 +1,9 @@
+[ODBC]
+DRIVER=ODBC Driver 17 for SQL Server
+ApplicationIntent=READONLY
+TrustServerCertificate=No
+WSID=ALPHA
+APP=Microsoft® Visual Studio®
+Trusted_Connection=Yes
+SERVER=local
+Description=Source connection for AdventureWorksETL
